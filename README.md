@@ -1,4 +1,4 @@
-# Product brief: Chess Review (shareable analysis web app)
+Chess Review
 
 **Project:** `chess-review` (GitHub: Harvidayne/chess-review)  
 **Parent workspace:** Chessengine  
