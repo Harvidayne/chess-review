@@ -1,0 +1,16 @@
+# Render Web Service (Node). Build: npm install && npm run build ; Start: npm run start
+#
+# Share links need a writable data directory. Free web instances use ephemeral disk
+# (data is lost on redeploy). For durable links, add a Render Disk and set:
+#   PERSISTENCE_PATH=/var/chess-data
+# matching the disk mount path in the dashboard.
+
+services:
+  - type: web
+    name: chess-review
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
